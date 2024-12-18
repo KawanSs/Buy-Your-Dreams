@@ -1,0 +1,52 @@
+@font-face {
+    font-family: Base;
+    src: url(../../assets/fonts/Moki-Base.ttf);
+}
+
+.hero{
+    padding: 5.6vw;
+    min-height: 75vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    &__title{
+        margin-top: 200px;
+        margin-left: 30px;
+        position: relative;
+        img{
+            opacity: 5%;
+            position: absolute;
+            width: 700px;
+            margin-top: -243px;
+        }
+        &__text{
+            position: absolute;
+            h1{
+                font-size: 60px;
+                color: #ff6d00;
+            }
+            h2{
+                color: #242424;
+                font-family: Base;
+            }
+        }
+    }
+    &__car{
+        position: relative;
+        width: 100%;
+        // margin-top: 200px;
+        p{
+            position: relative;
+            text-align: end;
+            font-size: 300px;
+            // opacity: 80%;
+            color: #ff6d00;
+            line-height: .8;
+        }
+        img{
+            margin-top: -100px;
+            position: absolute;
+            max-width: 100%;
+            // transform: scaleX(-1);
+        }
+    }
+}
