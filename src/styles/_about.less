@@ -1,5 +1,60 @@
+@import 'colors.less';
+
 .about{
     padding: 5.6vw;
-    height: 50vh;
-    background-color: #ff6d00;
+    height: 80vh;
+    background-color: @dark_orange;
+    background-image: url(../../assets/images/about/mc-bg-blur.png);
+    background-repeat: no-repeat;
+
+    &__title{
+        margin-top: 7.2vw;
+        margin-left: 2.5vw;
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        
+        // background-color: @white;
+        span{
+            max-width: 64px;
+            img{
+                width: 100%;
+            }
+        }
+        h2{
+            color: @white;
+            .gradient{
+                .gradientBlue();
+            }
+            position: absolute;
+            margin-left: 50px;
+            margin-top: 20px;
+            // text-shadow: 
+                // 0 0 0 @dark_orange, /* Top-left shadow */
+                // 0 0 0 @dark_orange,  /* Top-right shadow */
+                // 0 0 0 @dark_orange,  /* Bottom-left shadow */
+                // 4px 4px 0 #00b3ff; 
+        }
+    }
+    &__desc{
+        padding: 2vw 32vw 2vw 8vw;
+        color: @white;
+        font-size: 18px;
+    }
+    &__signature{
+        margin-left: 55%;
+        max-width: 200px;
+        color: @white;
+        text-align: center;
+        font-size: 12px;
+        img{
+            width: 100%;
+        }
+    }
+    &__footer{
+        max-width: 50%;
+        img{
+            width: 100%;
+        }
+    }
 }
