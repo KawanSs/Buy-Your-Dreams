@@ -2,8 +2,6 @@
     padding: 5.6vw;
     height: 80vh;
     background-color: @dark_orange;
-    background-image: url(../../assets/images/about/mc-bg-blur.png);
-    background-repeat: no-repeat;
 
     &__title{
         margin-top: 7.2vw;
@@ -19,19 +17,32 @@
             }
         }
         h2{
-            color: @black;
+            color: @white;
+            text-transform: uppercase;
             position: absolute;
             margin-left: 50px;
             margin-top: 20px;
+            b{
+                color: @black;
+            }
         }
     }
     &__desc{
-        padding: 2vw 32vw 2vw 8vw;
-        color: @white;
-        font-size: 18px;
+        padding: 1vw 32vw 2vw 8vw;
+        p{
+            color: @white;
+            font-size: 22px;
+            font-family: Base;
+            text-transform: uppercase;
+            b{
+                text-transform: none;
+                font-size: 18px;
+                color: @black;
+            }
+        }
     }
     &__signature{
-        margin-left: 55%;
+        margin-left: 58%;
         max-width: 200px;
         color: @black;
         text-align: center;

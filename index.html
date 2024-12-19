@@ -29,7 +29,7 @@
         </div>
         <div class="hero__car">
             <p>MCL<br>38</p>
-            <img src="./assets/images/hero/car.png" alt="Mclaren F1 car">
+            <img src="./assets/images/hero/mcl-38.png" alt="Mclaren F1 car">
         </div>
     </section>
     <section class="about">
@@ -37,10 +37,10 @@
             <span>
                 <img src="./assets/images/about/mc-white-outlined.png" alt="mclaren">
             </span>
-            <h2>Buy Your Dreams</h2>
+            <h2> <b>Buy</b> Your Dreams</h2>
         </div>
         <div class="about__desc">
-            <p>From the track to your home, McLaren F1 Certified Pre-Owned offers an exclusive selection of iconic supercars. Each vehicle undergoes a rigorous inspection process, ensuring it meets the highest standards of performance and luxury. Experience the thrill of owning a legendary McLaren F1, meticulously maintained and ready to deliver unparalleled driving pleasure.</p>
+            <p>From the track to your home, <b>McLaren F1</b> Certified Pre-Owned offers an exclusive selection of iconic supercars. Each vehicle undergoes a rigorous inspection process, ensuring it meets the highest standards of performance and luxury. Experience the thrill of owning a legendary <b>McLaren F1</b>, meticulously maintained and ready to deliver unparalleled driving pleasure.</p>
         </div>
         <div class="about__signature">
             <img src="./assets/images/about/zack.png" alt="Zak Brown signature">
@@ -55,31 +55,127 @@
             <span>
                 <img src="./assets/images/cars/mclaren-black-outlined.png" alt="mclaren">
             </span>
-            <h2>Buy Your Dream</h2>
+            <h2>BUY YOUR <b>DREAM</b></h2>
         </div>
-        <div class="cars__carousel">
-            <ul class="carousel__track">
-                <li class="cars__carousel__track__item">
-                    <img src="./assets/images/hero/mcl38.png" alt="Car 1">
-                </li>
-                <li class="cars__carousel__track__item">
-                    <img src="./assets/images/hero/car.png" alt="Car 1">
-                </li>
-                <li class="cars__carousel__track__item">
-                    <img src="./assets/images/hero/car.png" alt="Car 1">
-                </li>
-                <li class="cars__carousel__track__item">
-                    <img src="./assets/images/hero/car.png" alt="Car 1">
-                </li>
-                <li class="cars__carousel__track__item">
-                    <img src="./assets/images/hero/car.png" alt="Car 1">
-                </li>
-            </ul>
-            <button class="cars__carousel__button prev">&lt;</button>
-            <button class="cars__carousel__button next">&gt;</button>
-        </div>       
+        <div class="cars__nav">
+            <nav class="cars__nav__tabs">
+                <button data-tab-button="Recent" class="cars__nav__tabs__button  cars__nav__tabs__button--active">
+                    2000's
+                </button>
+                <button data-tab-button="Classics" class="cars__nav__tabs__button">
+                    Classics
+                </button>
+                <button data-tab-button="Liveries" class="cars__nav__tabs__button">
+                    Liveries
+                </button>
+            </nav>
+        </div>
+        <ul data-tab-id="Recent" class="cars__list cars__list--active">
+            <li class="cars__list__item">
+                <img src="./assets/images/cars/mcl-38.png" alt="MCL-38">
+            </li>
+            <li class="cars__list__item">
+                <img src="./assets/images/cars/mp4-23.png" alt="MP4-23">
+            </li>
+        </ul>
+        <ul data-tab-id="Classics" class="cars__list">
+            <li class="cars__list__item">
+                <img src="./assets/images/cars/SENNA.png" alt="MCL-38">
+            </li>
+            <li class="cars__list__item">
+                <img src="./assets/images/cars/LAUDA.png" alt="MP4-23">
+            </li>
+        </ul>
+        <ul data-tab-id="Liveries" class="cars__list">
+            <li class="cars__list__item">
+                <img src="./assets/images/cars/monaco.png" alt="MCL-38">
+            </li>
+            <li class="cars__list__item">
+                <img src="./assets/images/cars/singapore.png" alt="MP4-23">
+            </li>
+        </ul>
     </section>
-    <script src="./build/scripts/jquery-3.7.1.min.js"></script>
+    <section class="sponsors">
+        <ul class="sponsors__list">
+            <li class="sponsors__list__item">
+                <img src="./assets/images/sponsors/icons8-chrome.svg" alt="chrome">
+            </li>
+            <li class="sponsors__list__item">
+                <img src="./assets/images/sponsors/icons8-mastercard.svg" alt="mastercard">
+            </li>
+            <li class="sponsors__list__item">
+                <img class="nosvg" src="./assets/images/sponsors/OKX.png" alt="mastercard">
+            </li>
+            <li class="sponsors__list__item">
+                <img class="nosvg" src="./assets/images/sponsors/workday.png" alt="workkday">
+            </li>
+            <li class="sponsors__list__item">
+                <img src="./assets/images/sponsors/icons8-android.svg" alt="android">
+            </li>
+            <li class="sponsors__list__item">
+                <img src="./assets/images/sponsors/icons8-dell.svg" alt="dell">
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <div class="faq__title">
+            <span>
+                <img src="./assets/images/about/mc-white-outlined.png" alt="mclaren">
+            </span>
+            <h2><b>frequently </b> asked questions</h2>
+        </div>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Kawan, how did you get this <b>amazing</b> idea?
+                </div>
+                <div class="faq__questions__item__answer">
+                    All the credits to my friends! <br> This incredible idea was born out of a real synergy between us! We spent hours discussing and exchanging ideas and suddenly everything came together perfectly. Everyone brought a little piece of their own genius to this creation.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Have you ever been this <b>creative</b>?
+                </div>
+                <div class="faq__questions__item__answer">
+                    In fact, creativity has always been a part of me! Ever since I was little, I loved making up stories, creating imaginary worlds and transforming any object into something completely different. I think I've always had this need to express my ideas in an original way.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Who's the <b>pretiest</b> person you know?
+                </div>
+                <div class="faq__questions__item__answer">
+                    Agnes Prado
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Where did you <b>learn</b> to do all that?
+                </div>
+                <div class="faq__questions__item__answer">
+                    I owe everything I know to EBAC's excellent teaching. The teachers are masters in their fields and know how to convey knowledge clearly and objectively. What's more, the learning platform is complete and has allowed me to study at my own pace.
+                    <br>
+                    <a href="https://www.ebaconline.com.br">
+                        click here
+                    </a>
+                    and check out on them!
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__container__img">
+                <img src="./assets/images/footer/KawanCriativity.png" alt="Kawan Criativity Logo">
+            </div>
+            <div class="footer__container__text">
+                <p class="text-center">
+                    &copy; Kawan Criativity<br>all rights reserved, 2024.
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="./build/scripts/main.min.js"></script>
 </body>
 </html>
