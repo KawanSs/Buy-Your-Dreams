@@ -4,15 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>McLaren</title>
-    <link rel="stylesheet" href="./styles/main.min.css">
-    <link rel="shortcut icon" href="../assets/images/icons8-mclaren.svg" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./styles/main.min.css"> -->
+    <!-- <link rel="shortcut icon" href="../assets/images/icons8-mclaren.svg" type="image/x-icon"> -->
+     <link rel="stylesheet" href="./build/styles/main.min.css">
+     <link rel="shortcut icon" href="./assets/images/icons/icons8-mclaren.svg" type="image/x-icon">
 </head>
 <body>
     <header class="header">
         <div class="header__logo">
-            <img src="..\assets\images\icons8-mclaren.svg">
+            <img src="./assets/images/header/mclaren.png">
         </div>
     </header>
-    <script src="./scripts/main.min.js"></script>
+    <section class="hero">
+        <div class="hero__title">
+            <img src="./assets/images/icons/icons8-mclaren.svg" alt="">
+            <div class="hero__title__text">
+                <h1>
+                    McLaren F1
+                </h1>
+                <h2>
+                    Buy Your Dreams
+                </h2>
+            </div>
+        </div>
+        <div class="hero__car">
+            <p>MCL<br>38</p>
+            <img src="./assets/images/hero/car.png" alt="Mclaren F1 car">
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__title">
+            <span>
+                <img src="./assets/images/about/mc-white-outlined.png" alt="mclaren">
+            </span>
+            <h2>Buy Your Dreams</h2>
+        </div>
+        <div class="about__desc">
+            <p>From the track to your home, McLaren F1 Certified Pre-Owned offers an exclusive selection of iconic supercars. Each vehicle undergoes a rigorous inspection process, ensuring it meets the highest standards of performance and luxury. Experience the thrill of owning a legendary McLaren F1, meticulously maintained and ready to deliver unparalleled driving pleasure.</p>
+        </div>
+        <div class="about__signature">
+            <img src="./assets/images/about/zack.png" alt="Zak Brown signature">
+            <p>Zak Brown - CEO</p>
+        </div>
+        <footer class="about__footer">
+            <img src="./assets/images/about/pattern.png">
+        </footer>
+    </section>
+    <section class="cars">
+        <div class="cars__title">
+            <span>
+                <img src="./assets/images/cars/mclaren-black-outlined.png" alt="mclaren">
+            </span>
+            <h2>Buy Your Dream</h2>
+        </div>
+        <div class="cars__carousel">
+            <ul class="carousel__track">
+                <li class="cars__carousel__track__item--active">
+                    <img src="./assets/images/hero/mcl38.png" alt="Car 1">
+                </li>
+                <li class="cars__carousel__track__item">
+                    <img src="./assets/images/hero/car.png" alt="Car 1">
+                </li>
+                <li class="cars__carousel__track__item">
+                    <img src="./assets/images/hero/car.png" alt="Car 1">
+                </li>
+                <li class="cars__carousel__track__item">
+                    <img src="./assets/images/hero/car.png" alt="Car 1">
+                </li>
+                <li class="cars__carousel__track__item">
+                    <img src="./assets/images/hero/car.png" alt="Car 1">
+                </li>
+            </ul>
+            <button class="cars__carousel__button prev">&lt;</button>
+            <button class="cars__carousel__button next">&gt;</button>
+        </div>       
+    </section>
+    <script src="./build/scripts/main.min.js"></script>
 </body>
 </html>
