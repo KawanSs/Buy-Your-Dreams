@@ -1,13 +1,25 @@
 .sponsors{
     padding: 5.6vw;
     margin-top: 100px;
+    @media @breakpointMobile{
+        margin-top: 200px;
+    }
+    @media @breakpointTablet{
+        margin-top: 400px;
+    }
     &__list{
         display: flex;
         justify-content: space-around;
         &__item{
             max-width: 100px;
+            @media @breakpointMobile{
+                max-width: 50px;
+            }
             .nosvg{
                 margin-top: 35px;
+                @media @breakpointMobile{
+                    margin-top: 18px;
+                }
             }
             img{
                 width: 100%;

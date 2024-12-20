@@ -3,6 +3,12 @@
     min-height: 75vh;
     display: grid;
     grid-template-columns: 30% 70%;
+    @media @breakpointMobile{
+        display: block;
+    }
+    @media @breakpointTablet{
+        display: block;
+    }
     &__title{
         margin-top: 200px;
         margin-left: 30px;
@@ -12,9 +18,24 @@
             position: absolute;
             width: 700px;
             margin-top: -243px;
+            @media @breakpointMobile{
+                width: 300px;
+                margin-top: 220px;
+            }
+            @media @breakpointTablet{
+                width: 400px;
+                margin-top: -230px;
+                margin-left: 50px;
+            }
         }
         &__text{
             position: absolute;
+            @media @breakpointMobile{
+                margin-top: 300px;
+            }
+            @media @breakpointTablet{
+                margin-top: -100px;
+            }
             h1{
                 font-size: 60px;
                 color: @orange;
@@ -28,7 +49,6 @@
     &__car{
         position: relative;
         width: 100%;
-        // margin-top: 200px;
         p{
             position: relative;
             text-align: end;
@@ -36,13 +56,25 @@
             // opacity: 80%;
             color: @orange;
             line-height: .8;
+            @media @breakpointMobile{
+                font-size: 150px;
+                margin-top: -150px;
+            }
+            @media @breakpointTablet{
+                font-size: 200px;
+                margin-top: 300px;
+            }
         }
         img{
             margin-top: -350px;
-            // margin-left: 200px;
             position: absolute;
             max-width: 100%;
-            // transform: scaleX(-1);
+            @media @breakpointMobile{
+                margin-top: -200px;
+            }
+            @media @breakpointTablet{
+                margin-top: -280px;
+            }
         }
     }
 }

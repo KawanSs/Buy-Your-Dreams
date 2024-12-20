@@ -6,8 +6,23 @@
         display: flex;
         align-items: center;
         font-size: 32px;
+        @media @breakpointMobile{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            font-size: 28px;
+        }
+        @media @breakpointTablet{
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
         span{
             max-width: 64px;
+            @media @breakpointMobile{
+                margin-top: -50px;
+            }
+            @media @breakpointTablet{
+                margin-top: -50px;
+            }
             img{
                 width: 100%;
             }
@@ -36,6 +51,9 @@
                 cursor: pointer;
                 position: relative;
                 text-transform: uppercase;
+                @media @breakpointMobile{
+                    font-size: 14px;
+                }
                 b{
                     color: @dark_orange;
                 }
@@ -60,8 +78,13 @@
                 height: 0;
                 overflow: hidden;
                 padding: 0 10px;
-                transition: height, .8s ease;
+                transition: height, 1s ease;
                 text-transform: uppercase;
+                @media @breakpointMobile{
+                    font-size: 12px;
+                    padding: 0 2px;
+                    margin-right: 50px;
+                }
                 a{
                     font-family: Base;
                     font-size: 18px;
@@ -78,7 +101,7 @@
                 .faq__questions__item__answer{
                     height: auto;
                     padding-bottom: 24px;
-                    transition: height, .5s ease;
+                    transition: height, 1s ease;
                 }
             }
         }

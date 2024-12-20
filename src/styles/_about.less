@@ -2,16 +2,20 @@
     padding: 5.6vw;
     height: 80vh;
     background-color: @dark_orange;
-
     &__title{
         margin-top: 7.2vw;
         margin-left: 2.5vw;
         display: flex;
         align-items: center;
         font-size: 32px;
-        
+        @media @breakpointTablet{
+            margin-top: 130px;
+        }
         span{
             max-width: 64px;
+            @media @breakpointMobile{
+                margin-top: -50px;   
+            }
             img{
                 width: 100%;
             }
@@ -29,6 +33,12 @@
     }
     &__desc{
         padding: 1vw 32vw 2vw 8vw;
+        @media @breakpointMobile{
+            padding: 12vw;
+        }
+        @media @breakpointTablet{
+            padding: 6vw;
+        }
         p{
             color: @white;
             font-size: 22px;
@@ -47,6 +57,12 @@
         color: @black;
         text-align: center;
         font-size: 12px;
+        @media @breakpointMobile{
+            margin-top: -35px;
+        }
+        @media @breakpointTablet{
+            margin-top: -5px;
+        }
         img{
             width: 100%;
         }

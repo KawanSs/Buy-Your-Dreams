@@ -8,9 +8,15 @@
         align-items: center;
         font-size: 32px;
         margin-bottom: 5vw;
+        @media @breakpointMobile{
+            font-size: 28px;
+        }
         span{
             max-width: 64px;
             margin-left: -590px;
+            @media @breakpointMobile{
+                margin-left: -500px;
+            }
             img{
                 width: 100%;
             }
@@ -48,7 +54,20 @@
         &--active{
             display: flex;
             justify-content: center;
-
+            @media @breakpointMobile{
+                display: block;
+                max-width: 767px;
+                img{
+                    width: 100%;
+                }
+            }
+            @media @breakpointTablet{
+                display: block;
+                max-width: 767px;
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 }
