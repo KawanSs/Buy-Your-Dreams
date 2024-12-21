@@ -14,7 +14,7 @@
         span{
             max-width: 64px;
             @media @breakpointMobile{
-                margin-top: -50px;   
+                margin-top: -10px;   
             }
             img{
                 width: 100%;
@@ -26,6 +26,9 @@
             position: absolute;
             margin-left: 50px;
             margin-top: 20px;
+            @media @breakpointMobile{
+                font-size: 28px;
+            }
             b{
                 color: @black;
             }
@@ -44,10 +47,16 @@
             font-size: 22px;
             font-family: Base;
             text-transform: uppercase;
+            @media @breakpointMobile{
+                font-size: 14px;
+            }
             b{
                 text-transform: none;
                 font-size: 18px;
                 color: @black;
+                @media @breakpointMobile{
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -58,7 +67,9 @@
         text-align: center;
         font-size: 12px;
         @media @breakpointMobile{
-            margin-top: -35px;
+            margin-top: -45px;
+            margin-right: 30px;
+            font-size: 8px;
         }
         @media @breakpointTablet{
             margin-top: -5px;
@@ -69,6 +80,9 @@
     }
     &__footer{
         max-width: 50%;
+        @media @breakpointMobile{
+            margin-top: 25px;
+        }
         img{
             width: 100%;
         }

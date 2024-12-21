@@ -19,8 +19,8 @@
             width: 700px;
             margin-top: -243px;
             @media @breakpointMobile{
-                width: 300px;
-                margin-top: 220px;
+                width: 200px;
+                margin-top: 60px;
             }
             @media @breakpointTablet{
                 width: 400px;
@@ -31,18 +31,24 @@
         &__text{
             position: absolute;
             @media @breakpointMobile{
-                margin-top: 300px;
+                margin-top: 170px;
             }
             @media @breakpointTablet{
                 margin-top: -100px;
             }
             h1{
                 font-size: 60px;
-                color: @orange;
+                color: @orange;    
+                @media @breakpointMobile{
+                    font-size: 32px;
+                }
             }
             h2{
                 color: @black;
                 text-transform: uppercase;
+                @media @breakpointMobile{
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -57,8 +63,9 @@
             color: @orange;
             line-height: .8;
             @media @breakpointMobile{
-                font-size: 150px;
+                font-size: 100px;
                 margin-top: -150px;
+                // margin-right: 100px;
             }
             @media @breakpointTablet{
                 font-size: 200px;
@@ -70,7 +77,9 @@
             position: absolute;
             max-width: 100%;
             @media @breakpointMobile{
-                margin-top: -200px;
+                margin-top: -90px;
+                margin-left: 50px;
+                max-width: 80%;
             }
             @media @breakpointTablet{
                 margin-top: -280px;
