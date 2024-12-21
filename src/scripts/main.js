@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', function(){
     const NavBtn = document.querySelectorAll('[data-tab-button]');
     const FaqQuestion = document.querySelectorAll('[data-faq-question]');
+    const BuyButton = document.querySelectorAll('.cars__list__item__button');
+
+    BuyButton.forEach(BuyButton => {
+        BuyButton.addEventListener('click', function(){
+            alert('Not yet! But it is good to now you want to')
+        })
+    })
 
     for(let i=0; i < NavBtn.length; i++){
         NavBtn[i].addEventListener('click', function(event){
